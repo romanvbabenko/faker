@@ -11,12 +11,9 @@ module Faker
       end
 
       def copy_locale
-        copy_file "../../locales/en.yml", "config/locales/faker.en.yml"
+        copy_file "../../../locales/en.yml", "config/locales/faker.en.yml"
       end
 
-      def show_readme
-        readme "README" if behavior == :invoke
-      end
     end
   end
 end
